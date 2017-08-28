@@ -1,0 +1,7 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: python3 generate_string/web.py
+    ports:
+      - "127.0.0.1:8080:8080"

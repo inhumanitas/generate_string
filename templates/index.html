@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>WebSocket demo</title>
+    </head>
+    <body>
+        <script>
+            var ws = new WebSocket("ws://127.0.0.1:8081/");
+            ws.onmessage = function (event) {
+                var h1 = document.getElementsByTagName('h1')[0];
+                h1.textContent = event.data;
+            };
+        </script>
+        <h1 align="center">Connecting to websocket...</h1>
+    </body>
+</html>

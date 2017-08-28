@@ -8,7 +8,7 @@ import websockets
 from generate_string.generators import random_value
 
 STATIC_PATH = 'templates'
-HOST = '0.0.0.1'
+HOST = '0.0.0.0'
 UPDATE_INTERVAL = 1
 
 
